@@ -1,0 +1,36 @@
+:root {
+  --color-azul: #007ED1;
+  --blanco: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #007ED1;
+}
+
+figure {
+  margin: 0;
+  padding-left: 15px;
+  // background: #fff;
+  height: 80%;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+ul {
+  padding: 0;
+  display: flex;
+  li {
+    list-style: none;
+    margin: 0 10px;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
