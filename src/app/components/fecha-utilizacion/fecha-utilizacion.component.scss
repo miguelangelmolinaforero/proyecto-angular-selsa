@@ -1,0 +1,27 @@
+table {
+  margin: 0 auto;
+}
+
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+}
+
+th {
+  background: #007ed1;
+  color: white;
+  font-size: 17px;
+}
+
+.fecha-utilizacion-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    width: 15%;
+  }
+}

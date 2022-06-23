@@ -1,7 +1,7 @@
 <h1>Solicitud de Vacaciones</h1>
 
 <form>
-  <div class="input-form">
+  <div class="input-group">
     <label for="vacation-type">Seleccione el tipo de vacaciones</label>
     <select name="vacation-type" id="vacation-type">
       <option value="seleccione">Seleccione</option>
@@ -25,5 +25,7 @@
     <label for="observartions">Observaciones</label>
     <textarea name="observartions" id="" cols="30" rows="10" maxlength="300"></textarea>
   </div>
-  <button type="submit" class="btn btn-success" [disabled]="">Enviar</button>
+  <div class="input-group">
+    <button type="submit" class="btn btn-success" [disabled]="">Enviar</button>
+  </div>
 </form>

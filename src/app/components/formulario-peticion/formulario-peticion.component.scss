@@ -1,3 +1,17 @@
+h1 {
+  font-size: 25px;
+}
+
 label {
   display: block;
+}
+
+form {
+  width: 280px;
+  margin: 0 auto;
+  border: 1.2px solid #9b9b9b;
+}
+
+.input-group {
+  margin: 15px;
 }

@@ -1,0 +1,25 @@
+h1 {
+  font-size: 25px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+table {
+  margin: 0 auto;
+}
+
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+}
+
+th {
+  background: #007ed1;
+  color: white;
+  font-size: 17px;
+}
