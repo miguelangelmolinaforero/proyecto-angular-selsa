@@ -9,17 +9,29 @@ p {
 
 table {
   margin: 0 auto;
+  border-color: black;
+  border-style: unset;
 }
 
-table,
-tr,
-th,
-td {
-  border: 1px solid black;
+// table,
+// tr,
+// th,
+// td {
+//   border: 1px solid black;
+// }
+
+thead {
+  tr {
+    background: #007ed1;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+  }
 }
 
-th {
-  background: #007ed1;
-  color: white;
-  font-size: 17px;
+tr:nth-of-type(odd) {
+  background-color: #ddd;
+}
+tr {
+  text-align: center;
 }

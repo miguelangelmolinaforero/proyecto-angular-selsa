@@ -1,22 +1,33 @@
+<router-outlet></router-outlet>
+
+<br/><br/>
+<button routerLink= 'form' routerLinkActive= 'active-link'>Crear solicitud</button>
+<br/><br/>
+
 <table class="tabla-reto-prueba">
-  <tr>
-    <th>Modelo</th>
-    <th>Referencia</th>
-    <th>Fecha de solicitud</th>
-    <th>Etapa</th>
-    <th>Fecha de la ultima actividad ejecutada</th>
-    <th>Usuario responsable</th>
-    <th>Tiempo de evolución</th>
-    <th>Cancelar</th>
-  </tr>
-  <tr>
-    <td>Pago vacaciones</td>
-    <td>PAG-12321313</td>
-    <td>14-SEP-2022</td>
-    <td>Solicitud</td>
-    <td>24-SEP-2022</td>
-    <td>Pepito Perez</td>
-    <td>1.2 días</td>
-    <td>Logo cancelar</td>
-  </tr>
+  <thead>
+    <tr>
+      <th>Modelo</th>
+      <th>Referencia</th>
+      <th>Fecha de solicitud</th>
+      <th>Etapa</th>
+      <th>Fecha de la ultima actividad ejecutada</th>
+      <th>Usuario responsable</th>
+      <th>Tiempo de evolución</th>
+      <th>Cancelar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pago vacaciones</td>
+      <td>PAG-12321313</td>
+      <td>14-SEP-2022</td>
+      <td>Solicitud</td>
+      <td>24-SEP-2022</td>
+      <td>Pepito Perez</td>
+      <td>1.2 días</td>
+      <td routerLink= 'eliminar' routerLinkActive= 'active-link'>Logo cancelar</td>
+    </tr>
+  </tbody> 
+  
 </table>

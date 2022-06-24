@@ -12,4 +12,8 @@ export class ActaDisfruteComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onReturn(){
+    window.location.replace('historico');
+  }
+
 }
