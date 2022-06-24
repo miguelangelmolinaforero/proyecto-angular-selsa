@@ -1,0 +1,16 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  position: relative;
+}
+
+button {
+  padding: .375rem .75rem;
+  border-radius: .25rem;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color .15s ease-in-out;
+  border-style: none;
+  font-size: 17px;
+  font-weight: bold;
+}

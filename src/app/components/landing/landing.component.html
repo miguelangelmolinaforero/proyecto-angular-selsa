@@ -1,19 +1,35 @@
-<p>Consulta: Histórico de vacaciones</p>
+<router-outlet></router-outlet>
 
-<h1>Dias pendientes por disfrutar: </h1>
+<div>
+  
+  <h1>Dias pendientes por disfrutar: </h1>
 
-<table class="tabla-historico">
-  <tr>
-    <th>Fecha utilización</th>
-    <th>Días utilizados</th>
-    <th>Forma de utilización</th>
-    <th>Acta de disfrute</th>
-  </tr>
-  <!-- aqui va el ngFor -->
-  <tr>
-    <td>16-sep-2022</td>
-    <td>5</td>
-    <td>Disfrutados</td>
-    <td>Acta de disfrute</td>
-  </tr>
-</table>
+  <table class="tabla-historico">
+    <thead>
+      <tr>
+        <th>Fecha utilización</th>
+        <th>Días utilizados</th>
+        <th>Forma de utilización</th>
+        <th>Acta de disfrute</th>
+      </tr>
+    </thead>
+    <!-- aqui va el ngFor -->
+    <tbody>
+      <tr>
+        <td routerLink= 'dias' routerLinkActive= 'active-link'>16-sep-2022</td>
+        <td>5</td>
+        <td>Disfrutados</td>
+        <td routerLink= 'acta' routerLinkActive= 'active-link'>Acta de disfrute</td>
+      </tr>
+      <tr>
+        <td routerLink= 'dias' routerLinkActive= 'active-link'>14-sep-2022</td>
+        <td>4</td>
+        <td>Pagos</td>
+        <td routerLink= 'acta' routerLinkActive= 'active-link'>Acta de disfrute</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
