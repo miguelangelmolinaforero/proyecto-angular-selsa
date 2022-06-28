@@ -10,7 +10,7 @@ import { FechaUtilizacionComponent } from './components/fecha-utilizacion/fecha-
 import { ActaDisfruteComponent } from './components/acta-disfrute/acta-disfrute.component';
 import { FormularioPeticionComponent } from './components/formulario-peticion/formulario-peticion.component';
 import { EliminarPeticionComponent } from './components/eliminar-peticion/eliminar-peticion.component';
-import { FormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,8 +25,8 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

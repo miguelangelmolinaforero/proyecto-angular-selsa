@@ -1,8 +1,7 @@
 <router-outlet></router-outlet>
 
 <div>
-  
-  <h1>Dias pendientes por disfrutar: </h1>
+  <h1>Dias pendientes por disfrutar:</h1>
 
   <table class="tabla-historico">
     <thead>
@@ -15,21 +14,16 @@
     </thead>
     <!-- aqui va el ngFor -->
     <tbody>
-      <tr>
-        <td routerLink= 'dias' routerLinkActive= 'active-link'>16-sep-2022</td>
-        <td>5</td>
-        <td>Disfrutados</td>
-        <td routerLink= 'acta' routerLinkActive= 'active-link'>Acta de disfrute</td>
-      </tr>
-      <tr>
-        <td routerLink= 'dias' routerLinkActive= 'active-link'>14-sep-2022</td>
-        <td>4</td>
-        <td>Pagos</td>
-        <td routerLink= 'acta' routerLinkActive= 'active-link'>Acta de disfrute</td>
+      <tr *ngFor="let i of Datos">
+        <td routerLink="dias" routerLinkActive="active-link">
+          {{ i.fecha_utilizacion }}
+        </td>
+        <td>{{ i.dias_utilizados }}</td>
+        <td>{{ i.forma_utilizacion }}</td>
+        <td routerLink="acta" routerLinkActive="active-link" ><img width="20px" src="../../../assets/img/pdf-file-outlined-interface-symbol_icon-icons.com_57528.png">
+          {{ i.acta_disfrute }}
+        </td>
       </tr>
     </tbody>
   </table>
-
 </div>
-
-
