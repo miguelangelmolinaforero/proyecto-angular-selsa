@@ -4,6 +4,21 @@
   position: relative;
 }
 
+.acta-disfrute-container {
+  border: 1px solid gray;
+  padding: 30px;
+  position: fixed;
+  top: 28%;
+  left: 28%;
+  right: 0;
+  bottom: 0;
+  // transition: all ease-out 0.3s;
+  background-color: #ffffff;
+
+  width: 600px;
+  height: max-content;
+}
+
 button {
   padding: .375rem .75rem;
   border-radius: .25rem;
