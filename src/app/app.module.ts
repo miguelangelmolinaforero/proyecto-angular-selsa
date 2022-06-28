@@ -11,6 +11,7 @@ import { ActaDisfruteComponent } from './components/acta-disfrute/acta-disfrute.
 import { FormularioPeticionComponent } from './components/formulario-peticion/formulario-peticion.component';
 import { EliminarPeticionComponent } from './components/eliminar-peticion/eliminar-peticion.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     HttpClientModule
   ],

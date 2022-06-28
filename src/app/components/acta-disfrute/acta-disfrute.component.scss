@@ -19,6 +19,21 @@ iframe {
   margin: auto 0;
  }
 
+ .acta-disfrute-container {
+  border: 1px solid gray;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // transition: all ease-out 0.3s;
+  background-color: #ffffff;
+
+  width: auto;
+  height: max-content;
+}
+
 .b1 {
   display: flex;
   flex-direction: column;
