@@ -13,8 +13,19 @@ export class SolicitudService {
 
   getData(){
     this.http.get<Consultas>('http://localhost:3000/solicitud').subscribe((response) => {
-      console.log(response);
+      // console.log(response);
       this.data = response.solicitud;
     })
   }
+
+  getLength(){
+    return this.data.length;
+  }
+
+  addSolicitud(solicitud: Solicitud){
+    this.data.push(solicitud);
+    console.log(this.data);
+
+  }
+
 }

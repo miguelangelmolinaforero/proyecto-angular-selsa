@@ -1,32 +1,34 @@
 <router-outlet></router-outlet>
 
-<br/><br/>
-<button routerLink= 'form' routerLinkActive= 'active-link'>Crear solicitud</button>
-<br/><br/>
+<div class="animation-container">
+  <br/><br/>
+  <button routerLink= 'form' routerLinkActive= 'active-link'>Crear solicitud</button>
+  <br/><br/>
 
-<table class="tabla-reto-prueba">
-  <thead>
-    <tr>
-      <th>Modelo</th>
-      <th>Referencia</th>
-      <th>Fecha de solicitud</th>
-      <th>Etapa</th>
-      <th>Fecha de la ultima actividad ejecutada</th>
-      <th>Usuario responsable</th>
-      <th>Tiempo de evolución</th>
-      <th>Cancelar</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let i of Datos">
-      <td>{{i.modelo}}</td>
-      <td>{{i.referencia}}</td>
-      <td>{{i.fecha_solicitud}}</td>
-      <td>{{i.etapa}}</td>
-      <td>{{i.fecha_ultima_actividad_ejecutada}}</td>
-      <td>{{i.usuario_responsable}}</td>
-      <td>{{i.tiempo_evolucion}}</td>
-      <td routerLink= 'eliminar' routerLinkActive= 'active-link'><img width="20px" src="../../../assets/img/trash_bin_icon-icons.com_67981.png"></td>
-    </tr>
-  </tbody>
-</table>
+  <table class="tabla-reto-prueba">
+    <thead>
+      <tr>
+        <th>Modelo</th>
+        <th>Referencia</th>
+        <th>Fecha de solicitud</th>
+        <th>Etapa</th>
+        <th>Fecha de la ultima <br> actividad ejecutada</th>
+        <th>Usuario responsable</th>
+        <th>Tiempo de evolución</th>
+        <th>Cancelar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of Datos">
+        <td>{{i.modelo}}</td>
+        <td>{{i.referencia}}</td>
+        <td>{{i.fecha_solicitud}}</td>
+        <td>{{i.etapa}}</td>
+        <td>{{i.fecha_ultima_actividad_ejecutada}}</td>
+        <td>{{i.usuario_responsable}}</td>
+        <td>{{i.tiempo_evolucion}}</td>
+        <td routerLink= 'eliminar' routerLinkActive= 'active-link'><img width="20px" src="../../../assets/img/trash_bin_icon-icons.com_67981.png"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

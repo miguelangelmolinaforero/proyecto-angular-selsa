@@ -1,38 +1,38 @@
 <div class="formulario-solicitud-container">
   <h1>Solicitud de Vacaciones</h1>
   <hr />
-  <form  class="form" (ngSubmit)="onSubmit()">
+  <form  class="form">
     <div class="input-group">
       <label for="vacation-type">Seleccione el tipo de vacaciones</label>
       <select name="vacation-type" id="vacation-type" (change)="capturarValorVacaciones($event)">
         <option required value="0">Seleccionar</option>
-        <option name="nombre" required [(ngModel)]="formRegister.tipoVacaciones" *ngFor="let dato of OptionArray; index as i" [value]="i + 1">
+        <option name="nombre" required [(ngModel)]="form_solicitud_register.modelo" *ngFor="let dato of OptionArray; index as i" [value]="i">
           {{ dato }}
         </option>
       </select>
     </div>
-    <div *ngIf="opcionSeleccionado === '1'" class="input-group">
+    <div *ngIf="opcionSeleccionado === '0'" class="input-group">
       <label for="days">Dias habiles a disfrutar</label>
       <input required [(ngModel)]="formRegister.diasVacaciones" type="number" name="days" id="days">
     </div>
-    <div *ngIf="opcionSeleccionado === '2'" class="input-group">
+    <div *ngIf="opcionSeleccionado === '1'" class="input-group">
       <label for="days">Dias habiles a pagar</label>
       <input required [(ngModel)]="formRegister.diasPagos" type="number" name="days" id="days">
     </div>
     <div class="input-group">
       <label for="final-date">Fecha de salida</label>
-      <input required [(ngModel)]="formRegister.fechaSalida" type="date" name="final-date" id="final-date">
+      <input required [(ngModel)]="form_solicitud_register.fecha_solicitud" type="date" name="final-date" id="final-date">
     </div>
     <div class="input-group">
       <label for="observartions">Observaciones</label>
-      <textarea required [(ngModel)]="formRegister.observaciones" name="observartions" id="observartions" cols="30" rows="10" maxlength="300"></textarea>
+      <textarea required [(ngModel)]="form_solicitud_register.observaciones" name="observartions" id="observartions" cols="30" rows="10" maxlength="300"></textarea>
     </div>
     <div class="input-group">
-      <button type="submit">
+      <button type="submit" (click)="onSubmit()">
         Enviar
       </button>
     </div>
   </form>
 
-  <button (click)="onReturn()">Retornar</button>
+  <button routerLink= '/solicitud' routerLinkActive= 'active-link'>Retornar</button>
 </div>

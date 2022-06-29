@@ -27,11 +27,15 @@ table {
   width: 100vh;
   height: max-content;
 
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
 }
 
 thead {
@@ -61,4 +65,15 @@ button {
   font-size: 17px;
   font-weight: bold;
 
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:28%; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:28%; opacity:1}
 }

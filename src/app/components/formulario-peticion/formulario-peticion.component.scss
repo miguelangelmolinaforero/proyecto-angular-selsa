@@ -13,26 +13,63 @@ form {
   margin: 0 auto;
   margin-top: 20px;
   border: 1.2px solid #9b9b9b;
+  border-radius: 5px;
+  background: whitesmoke;
+  input {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: rgb(190, 190, 190) 1px solid;
+  }
+  textarea {
+    border-radius: 5px;
+    margin-top: 5px;
+    border: rgb(190, 190, 190) 1px solid;
+  }
+  textarea:focus {
+    outline: none;
+    transition: .2s;
+    border-bottom: #007bff 2px solid;
+  }
+  select {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: rgb(190, 190, 190) 1px solid;
+  }
+  input:focus {
+    outline: none;
+    border-bottom: #007bff 2px solid;
+  }
 }
 
 .input-group {
   margin: 15px;
+
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
 }
 
-+
 .formulario-solicitud-container {
   border: 1px solid rgb(180, 180, 180);
-  padding: 50px;
+  padding: 20px;
   position: fixed;
   top: 10%;
   left: 28%;
   right: 0;
   bottom: 0;
   // transition: all ease-out 0.3s;
-  background-color: #ffffffd6;
+  background-color: #ffffff;
 
   width: 100vh;
   height: max-content;
+
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
 }
 
 button {
@@ -52,4 +89,17 @@ button[disabled]{
   border: 1px solid #999999;
   background-color: #cccccc;
   color: #666666;
+}
+
+// ANIMATIONS
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:10%; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top: 0; opacity:0}
+  to {top:10%; opacity:1}
 }

@@ -20,6 +20,7 @@ export interface Solicitud {
   fecha_ultima_actividad_ejecutada: string;
   usuario_responsable:              string;
   tiempo_evolucion:                 string;
+  observaciones:                    string;
 }
 
 export enum Etapa {

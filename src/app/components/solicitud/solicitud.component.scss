@@ -9,15 +9,15 @@ p {
 
 table {
   margin: 0 auto;
-  border-color: black;
-  border-style: unset;
+  border: 1px solid #ddd;
+
 }
 
 thead {
   tr {
     background: #007ed1;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
 
   }
@@ -31,6 +31,24 @@ tr {
   text-align: center;
 }
 
+th {
+  padding: 10px;
+}
+
+tbody {
+  td{
+    font-size: 12px;
+    padding: 5px;
+  }
+  td:nth-of-type(1){
+    text-transform: uppercase;
+  }
+
+  td:nth-of-type(4){
+    text-transform: uppercase;
+  }
+}
+
 button {
   padding: .375rem .75rem;
   border-radius: .25rem;
@@ -40,4 +58,22 @@ button {
   border-style: none;
   font-size: 17px;
   font-weight: bold;
+}
+
+.animation-container {
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
 }
