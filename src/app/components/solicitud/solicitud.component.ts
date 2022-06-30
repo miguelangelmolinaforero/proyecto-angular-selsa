@@ -11,14 +11,19 @@ import { SolicitudService } from 'src/app/services/solicitud.service';
 export class SolicitudComponent implements OnInit {
 
   constructor(private http: HttpClient,
-    private solicitud: SolicitudService) {
+    private solicitudService: SolicitudService) {
     console.log('servicio http');
-    this.solicitud.getData();
+    this.solicitudService.getData();
   }
 
   ngOnInit(): void {}
 
   get Datos() {
-    return this.solicitud.data;
+    return this.solicitudService.data;
   }
+
+  onDelete(id: number) {
+    this.solicitudService.deleteSolicitud(id);
+  }
+
 }

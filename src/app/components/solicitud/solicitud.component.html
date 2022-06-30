@@ -19,7 +19,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let i of Datos">
+      <tr class="animation-container" *ngFor="let i of Datos">
         <td>{{i.modelo}}</td>
         <td>{{i.referencia}}</td>
         <td>{{i.fecha_solicitud}}</td>
@@ -27,7 +27,8 @@
         <td>{{i.fecha_ultima_actividad_ejecutada}}</td>
         <td>{{i.usuario_responsable}}</td>
         <td>{{i.tiempo_evolucion}}</td>
-        <td routerLink= 'eliminar' routerLinkActive= 'active-link'><img width="20px" src="../../../assets/img/trash_bin_icon-icons.com_67981.png"></td>
+        <!-- <td routerLink= 'eliminar' routerLinkActive= 'active-link'><img width="20px" src="../../../assets/img/trash_bin_icon-icons.com_67981.png"></td> -->
+        <td (click)="onDelete(i.id)"><img width="20px" src="../../../assets/img/trash_bin_icon-icons.com_67981.png"></td>
       </tr>
     </tbody>
   </table>

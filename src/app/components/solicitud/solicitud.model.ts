@@ -12,15 +12,15 @@ export interface Consultas {
 }
 
 export interface Solicitud {
-  id:                               number;
-  modelo:                           string;
-  referencia:                       string;
-  fecha_solicitud:                  string;
-  etapa:                            string;
+  id: number;
+  modelo: string;
+  referencia: string;
+  fecha_solicitud: string;
+  etapa: string;
   fecha_ultima_actividad_ejecutada: string;
-  usuario_responsable:              string;
-  tiempo_evolucion:                 string;
-  observaciones:                    string;
+  usuario_responsable: string;
+  tiempo_evolucion: string;
+  observaciones: string;
 }
 
 export enum Etapa {

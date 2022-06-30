@@ -13,7 +13,7 @@ const routes: Routes = [
     component: LandingComponent,
     children: [
       {
-        path: 'dias',
+        path: 'dias/:id',
         component: FechaUtilizacionComponent
       },
       {

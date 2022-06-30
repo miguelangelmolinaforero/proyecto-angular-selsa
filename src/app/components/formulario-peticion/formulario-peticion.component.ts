@@ -5,6 +5,10 @@ import { Solicitud } from "../solicitud/solicitud.model";
 // Se importa el servicio SolicitudService
 import { SolicitudService } from 'src/app/services/solicitud.service';
 
+// Se importa el servicio HistoricoService
+import { HistoricoService } from 'src/app/services/historico.service';
+import { Historico } from '../landing/landing.model';
+
 
 @Component({
   selector: 'app-formulario-peticion',
@@ -17,8 +21,14 @@ export class FormularioPeticionComponent implements OnInit {
   opcionSeleccionado: string = '';
   opcionSeleccionadoNumerico: number = 0;
 
-  // se delcara el index
-  index_array: number = 0;
+  // se declara la variable de la fecha actual de la solicitud
+  now: Date = new Date();
+
+  // se delcara el index de solicitud
+  index_array_solicitud: number = 0;
+
+  // se delcara el index de historico
+  index_array_historico: number = 0;
 
   // declaracion de objeto
   formRegister: FormPeticion = {
@@ -34,7 +44,7 @@ export class FormularioPeticionComponent implements OnInit {
   // Se declara el formulario de solicitud
 
   form_solicitud_register: Solicitud = {
-    id: this.index_array,
+    id: this.index_array_solicitud,
     modelo: '',
     referencia: 'VAC-12348',
     fecha_solicitud: '',
@@ -46,15 +56,25 @@ export class FormularioPeticionComponent implements OnInit {
   }
 
 
+
   // Constructor
   constructor(
-    private solicitudService: SolicitudService
-  ) {
-    this.OptionArray = ['Disfrutados', 'Pagos'];
+    private solicitudService: SolicitudService,
+    private historicoService: HistoricoService
+    ) {
+      this.OptionArray = ['Disfrutados', 'Pagos'];
   }
 
   ngOnInit(): void {
     // this.solicitudService.getData;
+  }
+
+  form_registro_historico: Historico = {
+    id: this.index_array_historico,
+    fecha_utilizacion: "",
+    dias_utilizados: 0,
+    forma_utilizacion: "",
+    acta_disfrute: ""
   }
 
   capturarValorVacaciones(event: Event) {
@@ -63,13 +83,33 @@ export class FormularioPeticionComponent implements OnInit {
   }
 
   onSubmit() {
-    this.index_array = this.solicitudService.getLength() + 1;
-    this.form_solicitud_register.id = this.index_array;
 
+    /* CARGUE DE DATOS DE LA SOLICITUD */
+
+    // Se le da el valor al index de la solicitud
+    this.index_array_solicitud = this.solicitudService.getLength() + 1;
+    this.form_solicitud_register.id = this.index_array_solicitud;
+
+    // Se le da valor al modelo de la solicitud
     this.opcionSeleccionadoNumerico = parseInt(this.opcionSeleccionado)
     this.form_solicitud_register.modelo = this.OptionArray[this.opcionSeleccionadoNumerico];
 
+    // Se le da el valor a la fecha de la solicitud y la fecha de la ultima actividad ejecutada
+    this.form_solicitud_register.fecha_solicitud = this.now.toLocaleDateString();
+    this.form_solicitud_register.fecha_ultima_actividad_ejecutada = this.now.toLocaleDateString();
+
+    // Se le envia el objeto creado al servicio solicitud.model.ts el cual lo agrega a la trama JSON
     this.solicitudService.addSolicitud(this.form_solicitud_register);
+
+    /* CARGUE DE DATOS DEL HISTORICO */
+
+    // Se le da el valor al index del historico
+    this.index_array_historico = this.historicoService.getLengthHistorico() + 1;
+    this.form_registro_historico.id = this.index_array_historico;
+
+    // Se le envia el objeto creado al servicio historico.model.ts el cual lo agrega a la trama JSON
+    this.historicoService.addHistorico(this.form_registro_historico);
+
   }
 
   onReturn() {

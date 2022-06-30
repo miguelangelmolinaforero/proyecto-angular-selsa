@@ -17,4 +17,16 @@ export class HistoricoService {
         this.data = response.historico;
       });
   }
+
+  // funcion que devuelve la longitud del array JSON
+  getLengthHistorico(){
+    return this.data.length;
+  }
+
+  // funcion que agrega el objeto al arreglo JSON
+  addHistorico(historico: Historico){
+    this.data.push(historico);
+    console.log(this.data);
+  }
+
 }

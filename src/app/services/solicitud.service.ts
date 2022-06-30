@@ -28,4 +28,10 @@ export class SolicitudService {
 
   }
 
+  deleteSolicitud (id: number) {
+    // con la funcion finIndex encontramos el indice del arreglo en la cual se le envia el id
+    let index = this.data.findIndex(d => d.id === id);
+    this.data.splice(index, 1);
+  }
+
 }

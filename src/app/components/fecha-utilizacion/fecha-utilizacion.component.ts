@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
 
+import { ActivatedRoute } from "@angular/router";
 
 @Component({
   selector: 'app-fecha-utilizacion',
@@ -8,13 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FechaUtilizacionComponent implements OnInit {
 
-  constructor() { }
+  @Output() loaded = new EventEmitter<string>();
+
+  constructor(private _route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    let id = this._route.snapshot.paramMap.get('id');
+    console.log(id);
   }
 
-  onReturn(){
-    window.location.replace('historico');
-  }
+
 
 }

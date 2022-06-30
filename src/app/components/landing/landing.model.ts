@@ -15,7 +15,7 @@ export interface Historico {
   id: number;
   fecha_utilizacion: string;
   dias_utilizados: number;
-  forma_utilizacion: FormaUtilizacion;
+  forma_utilizacion: string;
   acta_disfrute: string;
 }
 
