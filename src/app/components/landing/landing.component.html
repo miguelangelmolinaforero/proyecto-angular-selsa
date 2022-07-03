@@ -15,8 +15,8 @@
     <!-- aqui va el ngFor -->
     <tbody>
       <tr *ngFor="let i of Datos">
-        <!-- <td routerLink="dias" routerLinkActive="active-link"> -->
-        <td [routerLink]="['/dias', i.id]" routerLinkActive="active-link">
+        <td routerLink="dias" routerLinkActive="active-link">
+        <!-- <td [routerLink]="['/dias', i.id]" routerLinkActive="active-link"> -->
           {{ i.fecha_utilizacion }}
         </td>
         <td>{{ i.dias_utilizados }}</td>
