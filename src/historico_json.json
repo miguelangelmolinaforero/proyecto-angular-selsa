@@ -1,0 +1,73 @@
+{
+    "historico": [{
+            "id": 1001,
+            "fecha_utilizacion": "15-ENE-2022",
+            "dias_utilizados": 6,
+            "forma_utilizacion": "disfrutados",
+            "acta_disfrute": ""
+        },
+        {
+            "id": 1002,
+            "fecha_utilizacion": "17-ENE-2022",
+            "dias_utilizados": 8,
+            "forma_utilizacion": "pagos",
+            "acta_disfrute": ""
+        },
+        {
+            "id": 1003,
+            "fecha_utilizacion": "19-ENE-2022",
+            "dias_utilizados": 4,
+            "forma_utilizacion": "disfrutados",
+            "acta_disfrute": ""
+        },
+        {
+            "id": 1004,
+            "fecha_utilizacion": "22-ENE-2022",
+            "dias_utilizados": 9,
+            "forma_utilizacion": "disfrutados",
+            "acta_disfrute": ""
+        },
+        {
+            "id": 1005,
+            "fecha_utilizacion": "07-FEB-2022",
+            "dias_utilizados": 7,
+            "forma_utilizacion": "disfrutados",
+            "acta_disfrute": ""
+        },
+        {
+            "id": 1006,
+            "fecha_utilizacion": "11-FEB-2022",
+            "dias_utilizados": 3,
+            "forma_utilizacion": "pagos",
+            "acta_disfrute": ""
+        },
+        {
+            "id": 1007,
+            "fecha_utilizacion": "15-FEB-2022",
+            "dias_utilizados": 9,
+            "forma_utilizacion": "disfrutados",
+            "acta_disfrute": ""
+        },
+        {
+            "id": 1008,
+            "fecha_utilizacion": "07-MAR-2022",
+            "dias_utilizados": 4,
+            "forma_utilizacion": "disfrutados",
+            "acta_disfrute": ""
+        },
+        {
+            "id": 1009,
+            "fecha_utilizacion": "18-MAR-2022",
+            "dias_utilizados": 6,
+            "forma_utilizacion": "pagos",
+            "acta_disfrute": ""
+        },
+        {
+            "id": 1010,
+            "fecha_utilizacion": "25-MAR-2022",
+            "dias_utilizados": 10,
+            "forma_utilizacion": "disfrutados",
+            "acta_disfrute": ""
+        }
+    ]
+}

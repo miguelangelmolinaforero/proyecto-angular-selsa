@@ -1,0 +1,103 @@
+{
+    "solicitud": [{
+            "id": 2001,
+            "modelo": "Vacaciones",
+            "referencia": "VAC-12345",
+            "fecha_solicitud": "15-ENE-2022",
+            "etapa": "solicitud",
+            "fecha_ultima_actividad_ejecutada": "24-ENE-2022",
+            "usuario_responsable": "Tesoreria",
+            "tiempo_evolucion": "1.2 días"
+        },
+        {
+            "id": 2002,
+            "modelo": "Vacaciones",
+            "referencia": "VAC-12346",
+            "fecha_solicitud": "17-ENE-2022",
+            "etapa": "solicitud",
+            "fecha_ultima_actividad_ejecutada": "24-ENE-2022",
+            "usuario_responsable": "RR-HH",
+            "tiempo_evolucion": "2.2 días"
+        },
+        {
+            "id": 2003,
+            "modelo": "Pagos",
+            "referencia": "PAG-12345",
+            "fecha_solicitud": "19-ENE-2022",
+            "etapa": "solicitud",
+            "fecha_ultima_actividad_ejecutada": "25-ENE-2022",
+            "usuario_responsable": "Gerencia",
+            "tiempo_evolucion": "2 días"
+        },
+        {
+            "id": 2004,
+            "modelo": "Pagos",
+            "referencia": "PAG-12346",
+            "fecha_solicitud": "22-ENE-2022",
+            "etapa": "solicitud",
+            "fecha_ultima_actividad_ejecutada": "27-ENE-2022",
+            "usuario_responsable": "Tesoreria",
+            "tiempo_evolucion": "2.2 días"
+        },
+        {
+            "id": 2005,
+            "modelo": "Vacaciones",
+            "referencia": "VAC-12347",
+            "fecha_solicitud": "07-FEB-2022",
+            "etapa": "solicitud",
+            "fecha_ultima_actividad_ejecutada": "10-FEB-2022",
+            "usuario_responsable": "Gerencia",
+            "tiempo_evolucion": "0.8 días"
+        },
+        {
+            "id": 2006,
+            "modelo": "pagos",
+            "referencia": "PAG-12347",
+            "fecha_solicitud": "11-FEB-2022",
+            "etapa": "solicitud",
+            "fecha_ultima_actividad_ejecutada": "17-FEB-2022",
+            "usuario_responsable": "RR-HH",
+            "tiempo_evolucion": "3.2 días"
+        },
+        {
+            "id": 2007,
+            "modelo": "Vacaciones",
+            "referencia": "VAC-12348",
+            "fecha_solicitud": "15-FEB-2022",
+            "etapa": "solicitud",
+            "fecha_ultima_actividad_ejecutada": "17-FEB-2022",
+            "usuario_responsable": "Tesoreria",
+            "tiempo_evolucion": "1.1 días"
+        },
+        {
+            "id": 2008,
+            "modelo": "Vacaciones",
+            "referencia": "VAC-12349",
+            "fecha_solicitud": "07-MAR-2022",
+            "etapa": "solicitud",
+            "fecha_ultima_actividad_ejecutada": "13-MAR-2022",
+            "usuario_responsable": "Gerencia",
+            "tiempo_evolucion": "2.5 días"
+        },
+        {
+            "id": 2009,
+            "modelo": "Vacaciones",
+            "referencia": "VAC-12350",
+            "fecha_solicitud": "18-MAR-2022",
+            "etapa": "solicitud",
+            "fecha_ultima_actividad_ejecutada": "23-MAR-2022",
+            "usuario_responsable": "Gerencia",
+            "tiempo_evolucion": "1.5 días"
+        },
+        {
+            "id": 2010,
+            "modelo": "pagos",
+            "referencia": "VAC-12348",
+            "fecha_solicitud": "25-MAR-2022",
+            "etapa": "solicitud",
+            "fecha_ultima_actividad_ejecutada": "27-MAR-2022",
+            "usuario_responsable": "Gerencia",
+            "tiempo_evolucion": "2.5 días"
+        }
+    ]
+}
