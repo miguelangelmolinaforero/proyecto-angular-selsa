@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 import { FechaUtilizacionComponent } from './fecha-utilizacion.component';
 
 describe('FechaUtilizacionComponent', () => {
@@ -8,7 +9,11 @@ describe('FechaUtilizacionComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FechaUtilizacionComponent ]
+      declarations: [ FechaUtilizacionComponent ],
+      imports: [
+        RouterTestingModule,
+        HttpClientTestingModule
+      ]
     })
     .compileComponents();
   });

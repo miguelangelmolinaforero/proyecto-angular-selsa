@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { FormularioPeticionComponent } from './formulario-peticion.component';
 
 describe('FormularioPeticionComponent', () => {
@@ -8,7 +8,10 @@ describe('FormularioPeticionComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FormularioPeticionComponent ]
+      declarations: [ FormularioPeticionComponent ],
+      imports: [
+        HttpClientTestingModule
+      ]
     })
     .compileComponents();
   });
